@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="myForm">
+    <mat-form-field appearance="legacy">
+      <mat-label>Legacy form field</mat-label>
+      <input matInput placeholder="Placeholder" #myInput formControlName="name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+
+    <button mat-button color="primary">Login</button>
+</form>
+  
+  

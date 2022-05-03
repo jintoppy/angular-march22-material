@@ -11,13 +11,18 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from './components/dialog/dialog.component';
 import {LayoutModule} from '@angular/cdk/layout';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { LoginComponent } from './components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    DialogComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,10 @@ import {LayoutModule} from '@angular/cdk/layout';
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
-    LayoutModule
+    MatFormFieldModule,
+    MatInputModule,
+    LayoutModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
